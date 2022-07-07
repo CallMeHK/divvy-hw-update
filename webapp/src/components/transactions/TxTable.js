@@ -27,7 +27,7 @@ const TxTable = ({ data }) => {
             const { id, user_id: userId, description, merchant_id: merchantId, debit, credit, amount } = tx
             return (
               <tr data-testid={`transaction-${id}`} key={`transaction-${id}`}>
-                      <td data-testid={makeDataTestId(id, 'id')}>{id}</td>
+                <td data-testid={makeDataTestId(id, 'id')}>{id}</td>
                 <td data-testid={makeDataTestId(id, 'userId')}>{userId}</td>
                 <td data-testid={makeDataTestId(id, 'description')}>{description}</td>
                 <td data-testid={makeDataTestId(id, 'merchant')}>{merchantId}</td>

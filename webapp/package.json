@@ -12,6 +12,7 @@
     "build-prod": "webpack --mode production",
     "start": "webpack serve --hot --mode development",
     "lint": "eslint ./ --ext .js --ext .jsx --max-warnings=0",
+    "lint:fix": "eslint ./ --ext .js --ext .jsx --max-warnings=0 --fix",
     "test": "jest"
   },
   "dependencies": {
