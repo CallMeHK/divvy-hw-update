@@ -11,6 +11,7 @@
     "build-dev": "webpack --mode development",
     "build-prod": "webpack --mode production",
     "start": "webpack serve --hot --mode development",
+    "lint": "eslint ./ --ext .js --ext .jsx --max-warnings=0",
     "test": "jest"
   },
   "dependencies": {
@@ -34,6 +35,7 @@
     "babel-jest": "^28.1.2",
     "babel-loader": "^8.2.5",
     "eslint": "^8.19.0",
+    "eslint-plugin-jest": "^26.5.3",
     "eslint-plugin-react": "^7.30.1",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^28.1.2",

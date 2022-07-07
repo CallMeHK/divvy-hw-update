@@ -1,8 +1,11 @@
 {
-  "rules": {},
+  "rules": {
+   "react/react-in-jsx-scope": "off"
+  },
   "env": {
     "es6": true,
-    "browser": true
+    "browser": true,
+    "jest/globals": true
   },
   "parserOptions": {
     "ecmaVersion": 2018,
@@ -11,14 +14,23 @@
       "jsx": true
     }
   },
-  "extends": "eslint:recommended",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
   "plugins": [
-    "react"
+    "react",
+    "jest"
   ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "overrides": [
     {
       "files": [ "webpack.config.js", "babel.config.js", "jest.config.js", "testSetup.js" ],
